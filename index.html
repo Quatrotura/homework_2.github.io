@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Карточки товаров</title>
-<style>
-    .goods img{
-        width: 300px;
-        height: 300px;
-        border: 1px;
-        border-style: solid;
-        padding: 15px;
-        
-        
-    }
+    <title>Document</title>
+    <script src='code.js' defer></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
+    
+    
+    <body>
 
-</style>
-</head>
-<body>
-    <div class="goods">
-        <a href="https://www.ozon.ru/product/smartfon-huawei-smartfon-huawei-y8p-128gb-serebristyy-176016444/"> <img src="https://cdn1.ozone.ru/s3/multimedia-e/wc1200/6016378646.jpg"></a>
-        <a href="https://www.ozon.ru/product/nabor-dlya-risovaniya-gamma-klassicheskiy-270420206-179991752/"> <img src="https://cdn1.ozone.ru/s3/multimedia-o/wc1200/6018795696.jpg" ></a>
-        <a href="https://www.ozon.ru/context/detail/id/149702462/"> <img src="https://cdn1.ozone.ru/multimedia/wc1200/1027503063.jpg" ></a>
-        <a href="https://www.ozon.ru/context/detail/id/143294378/"> <img src="https://cdn1.ozone.ru/multimedia/wc1200/1021378460.jpg" ></a>
+    <div class='set' id = "wrapper"> 
+        <div class = "currenttime" id = 'currenttime'></div>
+
+        <input type='date' id='input-date' class='set__input-date'>
+        <input type='time' id='input-time' class='set__input-time'>
+        <div class='set__button_display'>
+            <button type='submit' id='turn-on-alarm-button' class='set__button'> Вкл </button>
+        </div>
+        <p id='warning' class='set__warning'></p>
     </div>
+    
 </body>
 </html>

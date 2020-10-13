@@ -1,0 +1,159 @@
+
+body {
+    background-image: url('sunrise.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.currenttime {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Poiret One', cursive;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+
+    
+
+}
+.set {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    align-content: center;
+    align-items: center;
+
+  
+}
+
+.set__input-date {
+
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    height: 38px;
+    margin-bottom: 2px;
+    box-shadow: -1px 0px 20px 0px rgba(207, 156, 62, 0.92);
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+
+}
+
+.set__input-time {
+
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    height: 38px;
+    box-shadow:         -1px 0px 20px 0px rgba(207, 156, 62, 0.92);
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+
+
+
+
+}
+
+.set__button_display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+
+    background: transparent;
+    border-radius: 10px;
+    border: unset;
+    height: 40px;
+    box-shadow:         -1px 0px 20px 0px rgba(207, 156, 62, 0.92);
+    font-family: 'Poiret One', cursive;
+        text-align: center;    
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+    width: 90px;
+
+}
+
+
+button:hover {
+    box-shadow:         none;
+    border-style: solid;
+    border-color: chocolate;
+    border: 0px;
+    
+}
+
+.set__input-time:hover {
+    box-shadow:         none;
+    border-style: solid;
+    border-color: chocolate;
+    border: 0px;
+
+    }
+
+.set__input-date:hover {
+    box-shadow:         none;
+    border-style: solid;
+    border-color: chocolate;
+    border: 0px;
+
+}
+
+
+.set__input-date:focus {
+    border: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+.set__input-time:focus {
+    border: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+button:active {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+}
+
+button:focus {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+}
+
+.set__warning {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+    font-family: 'Poiret One', cursive;
+    text-align: center;  
+    font-size: 30px;
+    font-weight: bolder;
+
+}
