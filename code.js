@@ -5,15 +5,20 @@ let wrapper = document.getElementById('wrapper');
 let alarm_ring = new Audio('wake_up.mp3');
 let warning = document.getElementById('warning');
 let currenttime = document.getElementById('currenttime');
-let impossible = "Нельзя взять и проснуться в прошлом";
 let check = false;
 
-let time = new Date;
-let hours   = time.getHours();
-let mins    = time.getMinutes();
+setInterval(() => {
+    let time = new Date;
+    let hours   = time.getHours();
+    let mins    = time.getMinutes();
+    currenttime.textContent = '';
+    hours <= 9 ? currenttime.textContent += "0" + hours + " : ":currenttime.textContent += hours + " : ";
+    mins <= 9  ? currenttime.textContent += "0" + mins:currenttime.textContent += mins;
+    
+}, 1);
 
-hours <= 9 ? currenttime.textContent += "0" + hours + " : ":currenttime.textContent += hours + " : ";
-mins <= 9  ? currenttime.textContent += "0" + mins:currenttime.textContent += mins;
+
+
 
 
 
